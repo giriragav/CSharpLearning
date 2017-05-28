@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace TestConsole
+namespace TestConsole2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            float fl = 1.2F;
+            int i = 256;
+            byte b = (byte)i;
         }
     }
 }
