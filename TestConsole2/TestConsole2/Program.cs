@@ -20,6 +20,7 @@ namespace TestConsole2
             person.firstName = "Arjun";
             person.lastName = "Giridharan";
             person.Introduce();
+            Person.Walkout();
         }
     }
 }

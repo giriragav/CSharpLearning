@@ -13,6 +13,10 @@ namespace TestConsole2
             {
                 Console.WriteLine("Hello! my name is " + firstName + " " + lastName);
             }
+            public static void Walkout()
+            {
+                Console.WriteLine("Tata bye bye");
+            }
         }
     }
 }
