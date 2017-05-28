@@ -12,6 +12,12 @@ namespace TestConsole2
         {
             int i = 256;
             byte b = (byte)i;
+
+            var s = "1234";
+            int j = int.Parse(s);
+            float f = float.Parse(s);
+            
+
         }
     }
 }
