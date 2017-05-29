@@ -1,4 +1,0 @@
-C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole\TestConsole\bin\Debug\TestConsole.exe
-C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole\TestConsole\bin\Debug\TestConsole.pdb
-C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole\TestConsole\obj\x86\Debug\TestConsole.exe
-C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole\TestConsole\obj\x86\Debug\TestConsole.pdb
