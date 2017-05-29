@@ -6,23 +6,16 @@ namespace TestConsole2
     {
         public class MotorCycle : MotorVechicle
         {
-            private readonly GPSTracker _gps;
-
             public string CycleName { get; set; }
-
-            public MotorCycle(GPSTracker gps)
-            {
-                _gps = gps;
-            }
-
+            
             public void PutStand()
             {
                 Console.WriteLine("Cycle is on stand.");
             }
 
-            public void SetDestination(string address)
+            public void StartCcycle(string address)
             {
-                _gps.GoToAPlace(address + " by cycle");
+                this.SetDestination(address + " by cycle");
             }
         }
     }

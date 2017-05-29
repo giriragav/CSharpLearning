@@ -33,14 +33,15 @@ namespace TestConsole2
         }
         static void UseMotor()
         {
-            var car = new MotorCar(new GPSTracker());
+            
+            var car = new MotorCar();
             car.Color = "Black";
             car.CarType = "Sedan";
             car.OpenDoor();
-            car.SetDestination("Las Vegas");
+            car.StartCar("Las Vegas");
 
-            var cycle = new MotorCycle(new GPSTracker());
-            cycle.SetDestination("Florida");
+            var cycle = new MotorCycle();
+            cycle.StartCcycle("Florida");
         }
         static void UsePost()
         {

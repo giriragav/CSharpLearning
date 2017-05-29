@@ -6,6 +6,8 @@ namespace TestConsole2
     {
         public class MotorVechicle
         {
+            private readonly GPSTracker _gps = new GPSTracker();
+
             public string Color { get; set; }
             
             public void StartEngine()
@@ -16,6 +18,11 @@ namespace TestConsole2
             public void StopEngine()
             {
                 Console.WriteLine("Vechicle is stopped.");
+            }
+
+            protected void SetDestination(string address)
+            {
+                _gps.GoToAPlace(address);
             }
         }
     }
