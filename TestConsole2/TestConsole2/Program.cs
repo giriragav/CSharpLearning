@@ -19,6 +19,7 @@ namespace TestConsole2
                 UsePoints();
                 UseCalculator();
                 UseHttpCookie();
+                UsePost();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -28,6 +29,14 @@ namespace TestConsole2
                 Console.WriteLine(ex.Message);
             }
            
+        }
+        static void UsePost()
+        {
+            var post = new Post("Exercise", "Design a class called Post. This class models a StackOverflow post. It should have properties for title, description and the date / time it was created.We should be able to up - vote or down - vote a post.We should also be able to see the current vote value.In the main method, create a post, up - vote and down - vote it a few times and then display the the current vote value. ");
+            post.Vote(true);
+            post.Vote(true);
+            post.Vote(false);
+            Console.WriteLine("Post title: {0}; Crated Date: {1}; Up Vote:{2}; Down Vote {3}", post.Title, post.CreatedTime, post.UpVote, post.DownVote);
         }
         static void UseHttpCookie()
         {
