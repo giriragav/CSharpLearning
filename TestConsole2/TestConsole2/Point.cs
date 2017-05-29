@@ -5,9 +5,13 @@ namespace TestConsole2
     {
         public class Point
         {
-            public int X;
-            public int Y;
-            public int F;
+            private int X;
+            private int Y;
+            private int F;
+
+            public int XX { get { return this.X; } set { this.X = value; } }
+            public int YY { get { return this.Y; } set { this.Y = value; } }
+            public int FF { get { return this.F; } set { this.F = value; } }
 
             public Point(int x, int y)
             {

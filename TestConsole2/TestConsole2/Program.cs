@@ -34,9 +34,9 @@ namespace TestConsole2
         }
         static void UsePerson()
         {
-            var person = new Person("Arjun", "Giridharan")
+            var person = new Person("Preethi", "Venkataraman")
             {
-                age = 20,
+                Age = 20,
                 Job = new List<Jobs>()
             };
             var job = new Jobs();
@@ -44,7 +44,7 @@ namespace TestConsole2
             person.Introduce();
             Person.Walkout();
             Makeold(person);
-            Console.WriteLine(person.age);
+            Console.WriteLine(person.Age);
         }
         static void UsePoints()
         {
@@ -52,13 +52,13 @@ namespace TestConsole2
             {
                 var point = new Point(10, 10);
                 point.Move(20, 20);
-                Console.WriteLine("Point is at ({0},{1}) - {2}", point.X, point.Y, point.F);
+                Console.WriteLine("Point is at ({0},{1}) - {2}", point.XX, point.YY, point.FF);
                 point.Move(point);
-                Console.WriteLine("Point is at ({0},{1}) - {2}", point.X, point.Y, point.F);
+                Console.WriteLine("Point is at ({0},{1}) - {2}", point.XX, point.YY, point.FF);
                 point.Move(new Point(20, 20));
-                Console.WriteLine("Point is at ({0},{1}) - {2}", point.X, point.Y, point.F);
+                Console.WriteLine("Point is at ({0},{1}) - {2}", point.XX, point.YY, point.FF);
                 point.Move(point);
-                Console.WriteLine("Point is at ({0},{1}) - {2}", point.X, point.Y, point.F);
+                Console.WriteLine("Point is at ({0},{1}) - {2}", point.XX, point.YY, point.FF);
             }
             catch (Exception)
             {
@@ -68,7 +68,7 @@ namespace TestConsole2
         }
         public static void Makeold(Person p)
         {
-            p.age += 20;
+            p.Age += 20;
         }
     }
 }
