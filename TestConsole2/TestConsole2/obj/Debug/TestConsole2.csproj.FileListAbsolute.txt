@@ -4,3 +4,6 @@ C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\obj\Debug\TestConsole2.csprojResolveAssemblyReference.cache
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\obj\Debug\TestConsole2.exe
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\obj\Debug\TestConsole2.pdb
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\Vechiles.dll
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\Vechiles.pdb
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\Vechiles.dll.config

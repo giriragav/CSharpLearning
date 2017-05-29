@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TestConsole2
 {
-    public class HttpCookie
+    class HttpCookie
     {
         private readonly Dictionary<string, string> dictionary = new Dictionary<string, string>();
 
