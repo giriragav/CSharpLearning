@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="GPSTracker.cs" />
     <Compile Include="HttpCookie.cs" />
     <Compile Include="Jobs.cs" />
     <Compile Include="MotorCar.cs" />
