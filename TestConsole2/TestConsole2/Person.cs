@@ -9,55 +9,33 @@ namespace TestConsole2
         {
             private string firstName;
             private string lastName;
-            private int age;
+            private int id;
             public List<Jobs> Job;
 
-            public string FirstName
-            {
-                get
-                {
-                    return this.firstName;
-                }
-                set
-                {
-                    this.firstName = value;
-                }
-            }
-
-            public string LastName
-            {
-                get
-                {
-                    return this.lastName;
-                }
-                set
-                {
-                    this.lastName = value;
-                }
-            }
+            public string FirstName {get{return this.firstName;}set{this.firstName = value;}}
+            public string LastName{get{return this.lastName;}set{this.lastName = value;}}
+            public int ID{get{return this.id;}set{this.id = value;}}
+            
+            public DateTime BirthDate { get; private set; }
 
             public int Age
             {
                 get
                 {
-                    return this.age;
-                }
-                set
-                {
-                    this.age = value;
+                    return (DateTime.Today - BirthDate).Days / 365;
                 }
             }
-
 
             public Person()
             {
                 //Job = new List<Jobs>();
             }
-            public Person(string fName, string lName)
+            public Person(string fName, string lName, DateTime bDate)
                 :this()
             {
                 this.firstName = fName;
                 this.lastName = lName;
+                this.BirthDate = bDate;
             }
             public void Introduce()
             {

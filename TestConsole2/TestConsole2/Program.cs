@@ -34,16 +34,15 @@ namespace TestConsole2
         }
         static void UsePerson()
         {
-            var person = new Person("Preethi", "Venkataraman")
+            var person = new Person("Preethi", "Venkataraman", new DateTime(1983, 04, 29))
             {
-                Age = 20,
+                ID = 20,
                 Job = new List<Jobs>()
             };
             var job = new Jobs();
             person.Job.Add(job);
             person.Introduce();
             Person.Walkout();
-            Makeold(person);
             Console.WriteLine(person.Age);
         }
         static void UsePoints()
@@ -65,10 +64,6 @@ namespace TestConsole2
 
                 Console.WriteLine("An unexpected error occured");
             }
-        }
-        public static void Makeold(Person p)
-        {
-            p.Age += 20;
         }
     }
 }
