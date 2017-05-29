@@ -5,6 +5,12 @@ namespace Vechiles
     public class MotorCycle : MotorVechicle
     {
         public string CycleName { get; set; }
+
+        public MotorCycle(string regNumber)
+            :base(regNumber)
+        {
+
+        }
             
         public void PutStand()
         {

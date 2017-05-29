@@ -34,13 +34,13 @@ namespace TestConsole2
         static void UseMotor()
         {
 
-            var car = new MotorCar();
+            var car = new MotorCar("EZL 7593");
             car.Color = "Black";
             car.CarType = "Sedan";
             car.OpenDoor();
             car.StartCar("Las Vegas");
 
-            var cycle = new MotorCycle();
+            var cycle = new MotorCycle("EPP 1234");
             cycle.StartCcycle("Florida");
             
         }

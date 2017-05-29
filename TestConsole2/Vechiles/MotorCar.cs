@@ -6,7 +6,12 @@ namespace Vechiles
     {
         public string CarType { get; set; }
 
-            
+        
+        public MotorCar(string regNumber)
+            :base(regNumber)
+        {
+
+        }
         public void OpenDoor()
         {
             Console.WriteLine("Car door is open.");
