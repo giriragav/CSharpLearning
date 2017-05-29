@@ -20,6 +20,7 @@ namespace TestConsole2
                 UseCalculator();
                 UseHttpCookie();
                 UsePost();
+                UseMotor();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -29,6 +30,13 @@ namespace TestConsole2
                 Console.WriteLine(ex.Message);
             }
            
+        }
+        static void UseMotor()
+        {
+            var car = new MotorCar();
+            car.Color = "Black";
+            car.CarType = "Sedan";
+            car.OpenDoor();
         }
         static void UsePost()
         {

@@ -45,6 +45,9 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="HttpCookie.cs" />
     <Compile Include="Jobs.cs" />
+    <Compile Include="MotorCar.cs" />
+    <Compile Include="MotorCycle.cs" />
+    <Compile Include="MotorVechicle.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Post.cs" />
