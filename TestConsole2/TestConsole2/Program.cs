@@ -14,6 +14,13 @@ namespace TestConsole2
             UsePerson();
             UsePoints();
             UseCalculator();
+            UseHttpCookie();
+        }
+        static void UseHttpCookie()
+        {
+            HttpCookie cookie = new HttpCookie();
+            cookie["name"] = "Giridharan Venkatesan";
+            cookie["Age"] = "10";
         }
         static void UseCalculator()
         {
