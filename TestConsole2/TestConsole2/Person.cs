@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TestConsole2
 {
@@ -9,7 +10,18 @@ namespace TestConsole2
             public string firstName;
             public string lastName;
             public int age;
+            public List<Jobs> Job;
 
+            public Person()
+            {
+                Job = new List<Jobs>();
+            }
+            public Person(string fName, string lName)
+                :this()
+            {
+                this.firstName = fName;
+                this.lastName = lName;
+            }
             public void Introduce()
             {
                 Console.WriteLine("Hello! my name is " + firstName + " " + lastName);

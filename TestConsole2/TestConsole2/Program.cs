@@ -17,9 +17,9 @@ namespace TestConsole2
             int j = int.Parse(s);
             float f = float.Parse(s);
 
-            var person = new Person() { age = 20 };
-            person.firstName = "Arjun";
-            person.lastName = "Giridharan";
+            var person = new Person("Arjun", "Giridharan") { age = 20 };
+            var job = new Jobs();
+            person.Job.Add(job);
             person.Introduce();
             Person.Walkout();
             Makeold(person);
