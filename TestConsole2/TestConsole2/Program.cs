@@ -10,11 +10,24 @@ namespace TestConsole2
     {
         static void Main(string[] args)
         {
-            UseConversions();
-            UsePerson();
-            UsePoints();
-            UseCalculator();
-            UseHttpCookie();
+            try
+            {
+                StopWatch timer = new StopWatch();
+                timer.StartClock();
+                UseConversions();
+                UsePerson();
+                UsePoints();
+                UseCalculator();
+                UseHttpCookie();
+                timer.StopClock();
+                Console.WriteLine("Total execution time: {0}", timer.TickedTime());
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+           
         }
         static void UseHttpCookie()
         {
