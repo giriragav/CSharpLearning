@@ -43,13 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="DBConnection.cs" />
     <Compile Include="HttpCookie.cs" />
     <Compile Include="Jobs.cs" />
+    <Compile Include="OracleConnection.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLConnection.cs" />
     <Compile Include="Stack.cs" />
     <Compile Include="StopWatch.cs" />
   </ItemGroup>

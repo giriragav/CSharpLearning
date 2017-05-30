@@ -20,8 +20,9 @@ namespace TestConsole2
                 //UseCalculator();
                 //UseHttpCookie();
                 //UsePost();
-                UseMotor();
+                //UseMotor();
                 //UseStack();
+                UseDBConnection();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -31,6 +32,27 @@ namespace TestConsole2
                 Console.WriteLine(ex.Message);
             }
            
+        }
+        static void UseDBConnection()
+        {
+            try
+            {
+                var sqlConn = new SQLConnection("SQLConnectionString");
+                var oracleConn = new OracleConnection("OracleConnectionString");
+
+                sqlConn.OpenConnection();
+                oracleConn.OpenConnection();
+
+                sqlConn.CloseConnection();
+                oracleConn.CloseConnection();
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            
         }
         static void UseStack()
         {
