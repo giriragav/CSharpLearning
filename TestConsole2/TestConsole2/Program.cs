@@ -21,6 +21,7 @@ namespace TestConsole2
                 UseHttpCookie();
                 UsePost();
                 UseMotor();
+                UseStack();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -30,6 +31,25 @@ namespace TestConsole2
                 Console.WriteLine(ex.Message);
             }
            
+        }
+        static void UseStack()
+        {
+            var stack = new Stack();
+            for(int i= 1;i < 5;i++)
+                stack.Push(i);
+            
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine(stack.Pop());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    break;
+                }
+            }
         }
         static void UseMotor()
         {
