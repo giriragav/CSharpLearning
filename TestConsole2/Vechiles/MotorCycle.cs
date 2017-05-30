@@ -21,6 +21,11 @@ namespace Vechiles
         {
             this.SetDestination(address + " by cycle");
         }
+        public override void TestDrive()
+        {
+            Console.WriteLine("Test driving the cycle");
+        }
+
     }
 }
 

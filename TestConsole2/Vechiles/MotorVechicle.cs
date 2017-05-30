@@ -28,6 +28,11 @@ namespace Vechiles
         {
             _gps.GoToAPlace(address + " " + this._registrationNumber);
         }
+
+        public virtual void TestDrive()
+        {
+
+        }
     }
 }
 

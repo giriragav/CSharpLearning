@@ -21,6 +21,12 @@ namespace Vechiles
         {
             this.SetDestination(address + " by car");
         }
+
+        public override void TestDrive()
+        {
+            Console.WriteLine("Test driving the car");
+        }
+
     }
 }
 

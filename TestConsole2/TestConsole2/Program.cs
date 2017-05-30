@@ -53,6 +53,7 @@ namespace TestConsole2
         }
         static void UseMotor()
         {
+            List<MotorVechicle> vechiles = new List<MotorVechicle>();
 
             var car = new MotorCar("EZL 7593");
             car.Color = "Black";
@@ -60,9 +61,15 @@ namespace TestConsole2
             car.OpenDoor();
             car.StartCar("Las Vegas");
 
+            vechiles.Add(car);
+
             var cycle = new MotorCycle("EPP 1234");
             cycle.StartCcycle("Florida");
-            
+
+            vechiles.Add(cycle);
+
+            var demo = new ShowRoom();
+            demo.TryVechiles(vechiles);
         }
         static void UsePost()
         {
