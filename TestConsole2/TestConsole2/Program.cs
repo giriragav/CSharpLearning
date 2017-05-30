@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieMaking;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace TestConsole2
                 StopWatch timer = new StopWatch();
                 timer.StartClock();
                 //UseConversions();
-                UsePerson();
+                //UsePerson();
                 //UsePoints();
                 //UseCalculator();
                 //UseHttpCookie();
@@ -26,6 +27,7 @@ namespace TestConsole2
                 //UseStack();
                 //UseDBConnection();
                 //UseWorkflowEngine();
+                UseMoveMaking();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -34,7 +36,24 @@ namespace TestConsole2
 
                 Console.WriteLine(ex.Message);
             }
-           
+
+        }
+        static void UseMoveMaking()
+        {
+
+            var movieMaking = new MovieMaking.MovieMaking();
+            var notifyDist = new NotifyDistributors();
+            var stakeHolders = new StakeHolder();
+            var media = new MovieMedia();
+
+            movieMaking.MovieStatusChange += notifyDist.OnMovieStauts;
+            movieMaking.MovieStatusChange += stakeHolders.OnMovieStauts;
+            movieMaking.MovieStatusChange += media.OnMovieStauts;
+
+            var movie = new Movie() { Title = "Marudhanayagam" };
+            movieMaking.Start(movie);
+
+
         }
         static void UseWorkflowEngine()
         {

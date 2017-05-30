@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vechiles", "Vechiles\Vechil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowEngine", "WorkflowEngine\WorkflowEngine.csproj", "{D0918A9D-AF3E-4815-89CE-DE450F010320}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieMaking", "MovieMaking\MovieMaking.csproj", "{7B016372-7539-4F8F-BB45-81CAF6B7852D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D0918A9D-AF3E-4815-89CE-DE450F010320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0918A9D-AF3E-4815-89CE-DE450F010320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0918A9D-AF3E-4815-89CE-DE450F010320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B016372-7539-4F8F-BB45-81CAF6B7852D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B016372-7539-4F8F-BB45-81CAF6B7852D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B016372-7539-4F8F-BB45-81CAF6B7852D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B016372-7539-4F8F-BB45-81CAF6B7852D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

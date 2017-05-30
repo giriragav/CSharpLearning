@@ -1,0 +1,5 @@
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\MovieMaking\bin\Debug\MovieMaking.dll
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\MovieMaking\bin\Debug\MovieMaking.pdb
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\MovieMaking\obj\Debug\MovieMaking.csprojResolveAssemblyReference.cache
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\MovieMaking\obj\Debug\MovieMaking.dll
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\MovieMaking\obj\Debug\MovieMaking.pdb

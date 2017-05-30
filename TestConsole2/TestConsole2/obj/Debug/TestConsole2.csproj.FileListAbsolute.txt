@@ -9,3 +9,5 @@ C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\WorkflowEngine.pdb
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\obj\Debug\TestConsole2.exe
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\obj\Debug\TestConsole2.pdb
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\MovieMaking.dll
+C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\TestConsole2\bin\Debug\MovieMaking.pdb
