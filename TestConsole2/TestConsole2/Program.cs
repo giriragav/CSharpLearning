@@ -22,9 +22,10 @@ namespace TestConsole2
                 //UseHttpCookie();
                 //UsePost();
                 //UseMotor();
+                UseAutoService();
                 //UseStack();
                 //UseDBConnection();
-                UseWorkflowEngine();
+                //UseWorkflowEngine();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -104,6 +105,25 @@ namespace TestConsole2
 
             var demo = new ShowRoom();
             demo.TryVechiles(vechiles);
+
+           
+        }
+        static void UseAutoService()
+        {
+            var car = new MotorCar("EZL 7593", new GPSTracker());
+            var service = new AutoService();
+            //service.DoService(car);
+            var repair = new AutoRepair();
+            var wash = new AutoWash();
+
+            AutoService.ArrangeServices servicehandler = repair.OilChange;
+            servicehandler += repair.TyreChange;
+            //servicehandler += wash.ScartchRemoval;
+            servicehandler += wash.WaterSpray;
+            servicehandler += wash.ApplySoap;
+            servicehandler += wash.WaterSpray;
+
+            service.DoService(car, servicehandler);
         }
         static void UsePost()
         {

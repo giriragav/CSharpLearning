@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace TestConsole2
 {
 
-    class Person
+    public class Person
     {
         private string firstName;
         private string lastName;

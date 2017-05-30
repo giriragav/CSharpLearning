@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoRepair.cs" />
+    <Compile Include="AutoService.cs" />
+    <Compile Include="AutoWash.cs" />
     <Compile Include="BaseVechile.cs" />
     <Compile Include="GPSTracker.cs" />
     <Compile Include="Interfaces\INavigationSystem.cs" />

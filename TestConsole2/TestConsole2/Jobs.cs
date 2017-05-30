@@ -1,7 +1,7 @@
 ﻿namespace TestConsole2
 {
 
-    class Jobs
+    public class Jobs
     {
 
     }
