@@ -7,8 +7,8 @@ namespace Vechiles
         public string CarType { get; set; }
 
         
-        public MotorCar(string regNumber)
-            :base(regNumber)
+        public MotorCar(string regNumber, INavigationSystem gps)
+            :base(regNumber, gps)
         {
 
         }

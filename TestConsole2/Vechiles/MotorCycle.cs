@@ -6,8 +6,8 @@ namespace Vechiles
     {
         public string CycleName { get; set; }
 
-        public MotorCycle(string regNumber)
-            :base(regNumber)
+        public MotorCycle(string regNumber, INavigationSystem gps)
+            :base(regNumber, gps)
         {
 
         }

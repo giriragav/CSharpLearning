@@ -20,9 +20,9 @@ namespace TestConsole2
                 //UseCalculator();
                 //UseHttpCookie();
                 //UsePost();
-                //UseMotor();
+                UseMotor();
                 //UseStack();
-                UseDBConnection();
+                //UseDBConnection();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -77,7 +77,7 @@ namespace TestConsole2
         {
             List<MotorVechicle> vechiles = new List<MotorVechicle>();
 
-            var car = new MotorCar("EZL 7593");
+            var car = new MotorCar("EZL 7593", new GPSTracker());
             car.Color = "Black";
             car.CarType = "Sedan";
             car.OpenDoor();
@@ -85,7 +85,7 @@ namespace TestConsole2
 
             vechiles.Add(car);
 
-            var cycle = new MotorCycle("EPP 1234");
+            var cycle = new MotorCycle("EPP 1234", new MobileGoogleMapApp());
             cycle.StartCcycle("Florida");
 
             vechiles.Add(cycle);

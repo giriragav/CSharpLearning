@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="BaseVechile.cs" />
     <Compile Include="GPSTracker.cs" />
+    <Compile Include="Interfaces\INavigationSystem.cs" />
+    <Compile Include="MobileGoogleMapApp.cs" />
     <Compile Include="MotorCar.cs" />
     <Compile Include="MotorCycle.cs" />
     <Compile Include="MotorVechicle.cs" />

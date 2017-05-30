@@ -2,11 +2,11 @@
 
 namespace Vechiles
 {
-    internal class GPSTracker
+    public class GPSTracker:INavigationSystem
     {
         public void GoToAPlace(string address)
         {
-            Console.WriteLine("Going to {0}", address);
+            Console.WriteLine("Going to {0} with GPS", address);
         }
     }
 }

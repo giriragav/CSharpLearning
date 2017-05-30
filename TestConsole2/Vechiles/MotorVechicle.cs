@@ -4,13 +4,14 @@ namespace Vechiles
 {
     public abstract class MotorVechicle
     {
-        private readonly GPSTracker _gps = new GPSTracker();
+        private INavigationSystem _gps;
         private string _registrationNumber;
 
         public string Color { get; set; }
 
-        public MotorVechicle(string regNumber)
+        public MotorVechicle(string regNumber, INavigationSystem gps)
         {
+            _gps = gps;
             _registrationNumber = regNumber;
         }
 
