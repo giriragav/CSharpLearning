@@ -2,7 +2,7 @@
 
 namespace Vechiles
 {
-    public class MotorVechicle
+    public abstract class MotorVechicle
     {
         private readonly GPSTracker _gps = new GPSTracker();
         private string _registrationNumber;
@@ -29,10 +29,7 @@ namespace Vechiles
             _gps.GoToAPlace(address + " " + this._registrationNumber);
         }
 
-        public virtual void TestDrive()
-        {
-
-        }
-    }
+        public abstract void TestDrive();
+}
 }
 

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseVechile.cs" />
     <Compile Include="GPSTracker.cs" />
     <Compile Include="MotorCar.cs" />
     <Compile Include="MotorCycle.cs" />

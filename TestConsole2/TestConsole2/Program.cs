@@ -14,14 +14,14 @@ namespace TestConsole2
             {
                 StopWatch timer = new StopWatch();
                 timer.StartClock();
-                UseConversions();
-                UsePerson();
-                UsePoints();
-                UseCalculator();
-                UseHttpCookie();
-                UsePost();
+                //UseConversions();
+                //UsePerson();
+                //UsePoints();
+                //UseCalculator();
+                //UseHttpCookie();
+                //UsePost();
                 UseMotor();
-                UseStack();
+                //UseStack();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
