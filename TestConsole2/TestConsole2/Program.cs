@@ -116,7 +116,7 @@ namespace TestConsole2
             var repair = new AutoRepair();
             var wash = new AutoWash();
 
-            AutoService.ArrangeServices servicehandler = repair.OilChange;
+            Action<MotorCar> servicehandler = repair.OilChange;
             servicehandler += repair.TyreChange;
             //servicehandler += wash.ScartchRemoval;
             servicehandler += wash.WaterSpray;

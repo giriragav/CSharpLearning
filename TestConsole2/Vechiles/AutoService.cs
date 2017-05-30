@@ -1,9 +1,10 @@
-﻿namespace Vechiles
+﻿using System;
+namespace Vechiles
 {
     public class AutoService
     {
         public delegate void ArrangeServices(MotorCar car);
-        public void DoService(MotorCar car, ArrangeServices services)
+        public void DoService(MotorCar car, Action<MotorCar> services)
         {
             //var repair = new AutoRepair();
             //repair.OilChange(car);
