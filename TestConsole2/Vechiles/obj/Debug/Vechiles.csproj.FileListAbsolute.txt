@@ -1,4 +1,3 @@
-C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\Vechiles\obj\Debug\Vechiles.csprojResolveAssemblyReference.cache
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\Vechiles\bin\Debug\Vechiles.dll.config
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\Vechiles\bin\Debug\Vechiles.dll
 C:\Users\giridharan.venkatesa\Documents\Giri\Learning\CSharpLearning\TestConsole2\Vechiles\bin\Debug\Vechiles.pdb

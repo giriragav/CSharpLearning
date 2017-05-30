@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vechiles;
+using WorkflowEngine;
 namespace TestConsole2
 {
     partial class Program
@@ -20,9 +21,10 @@ namespace TestConsole2
                 //UseCalculator();
                 //UseHttpCookie();
                 //UsePost();
-                UseMotor();
+                //UseMotor();
                 //UseStack();
                 //UseDBConnection();
+                UseWorkflowEngine();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -32,6 +34,16 @@ namespace TestConsole2
                 Console.WriteLine(ex.Message);
             }
            
+        }
+        static void UseWorkflowEngine()
+        {
+            var wrkflwEngine = new WorkflowEngine.WorkflowEngine();
+            var wrkflow = new Workflow();
+            wrkflow.SetActivities(new Acitivity1());
+            wrkflow.SetActivities(new Acitivity2());
+
+            wrkflwEngine.ExecuteTasks(wrkflow);
+
         }
         static void UseDBConnection()
         {

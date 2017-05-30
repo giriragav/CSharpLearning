@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{394D0E55-6E6D-4AD1-9334-8A562E2FB926}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>TestConsole2</RootNamespace>
-    <AssemblyName>TestConsole2</AssemblyName>
+    <ProjectGuid>{D0918A9D-AF3E-4815-89CE-DE450F010320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WorkflowEngine</RootNamespace>
+    <AssemblyName>WorkflowEngine</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,32 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="HttpCookie.cs" />
-    <Compile Include="Jobs.cs" />
-    <Compile Include="OracleConnection.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Point.cs" />
-    <Compile Include="Post.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Acitivity1.cs" />
+    <Compile Include="Acitivity2.cs" />
+    <Compile Include="IWorkflow.cs" />
+    <Compile Include="IWorkflowAcitiviy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLConnection.cs" />
-    <Compile Include="Stack.cs" />
-    <Compile Include="StopWatch.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Vechiles\Vechiles.csproj">
-      <Project>{5ced028f-5222-4375-bd3a-3af2eb4d949e}</Project>
-      <Name>Vechiles</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WorkflowEngine\WorkflowEngine.csproj">
-      <Project>{d0918a9d-af3e-4815-89ce-de450f010320}</Project>
-      <Name>WorkflowEngine</Name>
-    </ProjectReference>
+    <Compile Include="Workflow.cs" />
+    <Compile Include="WorkflowEngine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
