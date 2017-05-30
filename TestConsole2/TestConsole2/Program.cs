@@ -16,13 +16,13 @@ namespace TestConsole2
                 StopWatch timer = new StopWatch();
                 timer.StartClock();
                 //UseConversions();
-                //UsePerson();
+                UsePerson();
                 //UsePoints();
                 //UseCalculator();
                 //UseHttpCookie();
                 //UsePost();
                 //UseMotor();
-                UseAutoService();
+                //UseAutoService();
                 //UseStack();
                 //UseDBConnection();
                 //UseWorkflowEngine();
@@ -160,14 +160,21 @@ namespace TestConsole2
         {
             var person = new Person("Preethi", "Venkataraman", new DateTime(1983, 04, 29))
             {
-                ID = 20,
-                Job = new List<Jobs>()
+                ID = 20
             };
-            var job = new Jobs();
-            person.Job.Add(job);
-            person.Introduce();
-            Person.Walkout();
-            Console.WriteLine(person.Age);
+
+            person.Job.Add(new Jobs() { Title = "Junior programmer", Salary = 70000F });
+            person.Job.Add(new Jobs() { Title = "Analyst", Salary = 80000F });
+            person.Job.Add(new Jobs() { Title = "Lead Analyst", Salary = 90000F });
+            person.Job.Add(new Jobs() { Title = "Architect", Salary = 100000F });
+            person.Job.Add(new Jobs() { Title = "Senior Architect", Salary = 120000F });
+
+            var bestJobs = person.Job.FindAll(j => j.Salary > 85000F);
+            foreach (var job in bestJobs)
+                Console.WriteLine("Best Jobs: " + job.Title);
+            //person.Introduce();
+            //Person.Walkout();
+            //Console.WriteLine(person.Age);
         }
         static void UsePoints()
         {

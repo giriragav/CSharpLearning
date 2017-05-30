@@ -27,7 +27,7 @@ namespace TestConsole2
 
         public Person()
         {
-            //Job = new List<Jobs>();
+            Job = new List<Jobs>();
         }
         public Person(string fName, string lName, DateTime bDate)
             :this()
