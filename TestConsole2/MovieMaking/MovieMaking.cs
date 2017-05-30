@@ -5,8 +5,10 @@ namespace MovieMaking
 {
     public class MovieMaking
     {
-        public delegate void MovieStatusChangeEventHandler(object source, EventArgs arg, Movie movie);
-        public event MovieStatusChangeEventHandler MovieStatusChange;
+        //public delegate void MovieStatusChangeEventHandler(object source, EventArgs arg, Movie movie);
+        //public event MovieStatusChangeEventHandler MovieStatusChange;
+
+        public EventHandler<Movie> MovieStatusChange;
 
         public void Start(Movie movie)
         {
@@ -43,7 +45,7 @@ namespace MovieMaking
 
         public virtual void OnMovieStatusChange(Movie movie)
         {
-            MovieStatusChange(this, EventArgs.Empty, movie);
+            MovieStatusChange(this, movie);
         }
 
     }
