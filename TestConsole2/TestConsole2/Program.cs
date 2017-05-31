@@ -17,7 +17,7 @@ namespace TestConsole2
                 StopWatch timer = new StopWatch();
                 timer.StartClock();
                 //UseConversions();
-                //UsePerson();
+                UsePerson();
                 //UsePoints();
                 //UseCalculator();
                 //UseHttpCookie();
@@ -27,7 +27,7 @@ namespace TestConsole2
                 //UseStack();
                 //UseDBConnection();
                 //UseWorkflowEngine();
-                UseMoveMaking();
+                //UseMoveMaking();
                 timer.StopClock();
                 Console.WriteLine("Total execution time: {0}", timer.TickedTime());
             }
@@ -188,9 +188,9 @@ namespace TestConsole2
             person.Job.Add(new Jobs() { Title = "Architect", Salary = 100000F });
             person.Job.Add(new Jobs() { Title = "Senior Architect", Salary = 120000F });
 
-            var bestJobs = person.Job.FindAll(j => j.Salary > 85000F);
+            var bestJobs = person.Job.OrderBy(j=>j.Title).Where(j => j.Salary > 85000F).Select(b=>b.Title);
             foreach (var job in bestJobs)
-                Console.WriteLine("Best Jobs: " + job.Title);
+                Console.WriteLine("Best Jobs: " + job);
             //person.Introduce();
             //Person.Walkout();
             //Console.WriteLine(person.Age);
